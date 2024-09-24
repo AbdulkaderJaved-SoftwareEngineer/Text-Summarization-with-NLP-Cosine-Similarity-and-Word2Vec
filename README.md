@@ -1,0 +1,1 @@
+An extractive text summarization approach leveraging NLP, Cosine Similarity, Word2Vec, and PageRank delivers concise, meaningful summaries by ranking sentences based on semantic similarity and importance, improving efficiency in information retrieval'
