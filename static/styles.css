@@ -1,0 +1,51 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+textarea {
+    background-color: #333;
+    color: #fff;
+    border: none;
+}
+
+textarea:focus {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    box-shadow: none;
+}
+
+          /** TEXT GRADIENT */
+
+
+h1{
+color: #ff6699;
+background-image: -webkit-linear-gradient(180deg, #ff6699 24%, #793097 50%, #d16463 32%);
+background-clip: text;
+-webkit-background-clip: text;
+text-fill-color: transparent;
+-webkit-text-fill-color: transparent;
+font-weight:600;
+font-family: "Poppins", sans-serif;
+ font-weight: 700;
+ font-style: normal;
+ }
+
+.summary_text{
+
+
+
+padding:2em;
+
+-webkit-box-shadow: -2px 21px 22px 21px rgba(0,0,0,0.75);
+-moz-box-shadow: -2px 21px 22px 21px rgba(0,0,0,0.75);
+box-shadow: -2px 21px 22px 21px rgba(0,0,0,0.75);
+z-index = 9
+
+
+}
+
+.text{
+font-size:15px;
+font-weight:50;
+}

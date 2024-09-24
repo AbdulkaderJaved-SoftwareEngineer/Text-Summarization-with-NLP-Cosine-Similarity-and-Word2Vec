@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Text Summarization App</title>
+</head>
+<body class="bg-dark text-light">
+    <div class="container">
+        <h1 class="mt-5">Abdulkader's Text Summarization using NLP </h1>
+        <form method="POST" class="mt-4">
+            <div class="form-group">
+                <textarea class="form-control" name="text" rows="10" placeholder="Enter text here..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" id = "loadingButton">Summarize</button>
+
+
+        </form>
+
+
+
+    {% if originalText %}
+        <p>Original text Length  : {{ originalText }} words</p>
+        {% endif %}
+
+        {% if summary_length %}
+        <p>Summary Text Length  : {{ summary_length }} words</p>
+        {% endif %}
+
+
+        {% if summary %}
+   <div class="summary_text">
+<p class="mt-5 text">Sure here is the summary:</p>
+        <p>{{ summary }}</p>
+        {% endif %}
+
+
+
+
+
+       </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+
+    function
+        window.onload = function() {
+            const button = document.getElementById('loadingButton');
+
+            // Simulate a loading time (e.g., 3 seconds)
+            setTimeout(() => {
+                // Change button text and enable it after loading
+                button.innerHTML = 'Loaded!';
+                button.disabled = false;
+            }, 3000);
+        };
+</script>
+</body>
+</html>
